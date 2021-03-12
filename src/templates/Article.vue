@@ -1,11 +1,11 @@
 <template>
-  <Layout>
+    <Layout>
 
-    <h1 class="page-title">{{ $page.article.title }}</h1>
+        <h1 class="page-title">{{ $page.article.title }}</h1>
 
-    <article v-html="$page.article.content" class="article" />
+        <article v-html="$page.article.content" class="article" />
 
-  </Layout>
+    </Layout>
 </template>
 
 <page-query>
@@ -29,7 +29,7 @@ export default {
 
     metaInfo() {
         return {
-          title: this.$page.article.title,
+            title: this.$page.article.title,
         }
     },
 

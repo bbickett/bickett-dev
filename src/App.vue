@@ -26,8 +26,7 @@ export default {
       link: [
         {
           rel: "stylesheet",
-          href:
-            "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto:300,400|Architects+Daughter|Permanent+Marker&display=swap"
+          href: "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto:300,400|Architects+Daughter|Permanent+Marker&display=swap"
         }
       ]
     }
