@@ -1,0 +1,48 @@
+
+// Site Colors
+$b-blue: #1063bb;
+$b-blue-alternate: #194C7B;
+$b-yellow: #EBB258;
+$b-green: #289588;
+$b-gray: #A2A2A2;
+$b-tan: #5B6562;
+$b-darkblue: #131425;
+$b-darkgray: #424242;
+$b-red: #773750;
+$b-orange: #8D696B;
+$offwhite: #f2f2f2;
+$b-green-light: #69bbab;
+$b-blue-gray: #bbcbdb;
+
+$light-blue: lighten($b-blue, 50%);
+
+
+
+
+$theme-colors: (
+    "brand": $b-blue,
+    "secondary": $b-green,
+    "primary": $b-blue,
+    "alternate": $b-darkblue,
+    "default": $b-gray,
+    "success": $b-green,
+    "danger": $b-red,
+    "warning": $b-orange,
+    "loading": $b-yellow,
+    "loaded": $b-green,
+    "error": $b-red,
+    "light": lighten($b-gray, 10%),
+    "dark": $b-darkgray,
+);
+
+$link-color: $b-darkblue;
+
+
+// Bootstrap Overrides
+$enable-gradients: true;
+$body-bg: $offwhite;
+$font-size-base: 1rem;  // Default
+$text-color: #333;
+$enable-shadows: true;
+//$grid-breakpoints: ( xs: 0, sm: 456px, md: 789px, lg: 999px, xl: 1234px );
+
