@@ -97,6 +97,8 @@ export default {
                 urlEncode(this.form),
                 { header: { "Content-Type": "application/x-www-form-urlencoded" } }
             )
+            .then(() => console.log('Form successfully submitted'))
+            .catch((error) => alert(error))
         }
     }
 }
