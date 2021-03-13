@@ -4,7 +4,7 @@
         <p>What's on your mind?</p>
 
 
-        <b-form name="contact" method="POST" data-netlify="true" netlify-honeypot="title" data-netlify-recaptcha="true" @submit.prevent="submitContactForm">
+        <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" data-netlify-recaptcha="true" @submit.prevent="submitContactForm">
 
             <input type="hidden" name="form-name" value="contact" />
 
@@ -84,7 +84,8 @@ export default {
             form: {
                 name: '',
                 email: '',
-                message: ''
+                message: '',
+                'form-name': 'contact'
             }
         }
     },
@@ -92,14 +93,9 @@ export default {
         submitContactForm() {
 
             axios.post(
-                "/",
-                urlEncode({
-                    "form-name": "contact",
-                    ...this.form
-                }),
-                {
-                    header: { "Content-Type": "application/x-www-form-urlencoded" }
-                }
+                '/',
+                urlEncode(this.form),
+                { header: { "Content-Type": "application/x-www-form-urlencoded" } }
             )
         }
     }
