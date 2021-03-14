@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" >
+        <b-navbar toggleable="lg" class="main-nav container">
             <b-navbar-brand to="/" class="mr-4"><logo></logo></b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -33,9 +33,31 @@ export default {
 }
 </script>
 
-<style>
-    .nav-pages {
-        font-size: 1.3rem;
-        font-family: "Architects Daughter";
+<style lang="scss">
+
+    
+    .navbar-light .navbar-nav {
+        .nav-pages {
+            font-family: "Architects Daughter";
+        }
+
+        .nav-link {
+            font-size: 1.4rem;
+            color: var(--brand);
+            font-weight: 600;
+
+            &:hover {
+                color: var(--alternate);
+                background-color: rgba(150,150,150,0.1);
+                border-radius: 0.5rem;
+            }
+
+            &:active, &.active {
+                color: var(--alternate);
+            }
+        }
     }
+
+
+
 </style>

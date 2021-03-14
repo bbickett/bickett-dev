@@ -5,7 +5,7 @@
           <main-nav></main-nav>
         </header>
 
-        <main class="container-fluid main">
+        <main class="main container">
             <slot/>
         </main>
     
@@ -33,3 +33,12 @@ import SiteFooter from '~/components/SiteFooter.vue'
   }
 </script>
 
+<style lang="scss" scoped>
+
+  .header {
+    border-bottom: 3px solid var(--brand);
+    margin-bottom: 1rem;
+    background-color: #fff;;
+  }
+
+</style>

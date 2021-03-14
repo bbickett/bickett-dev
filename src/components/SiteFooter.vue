@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <b-navbar>
+        <b-navbar class="container">
 
             <b-navbar-nav class="ml-auto social-icons">
                 <b-nav-item href="https://github.com/bbickett/" aria-label="github" target="_blank" rel="noopener noreferrer">
@@ -18,6 +18,7 @@
 <style lang="scss">
     .footer {
         background-color: $b-blue;
+        margin-top: 2rem;
     }
 
     .social-icon {

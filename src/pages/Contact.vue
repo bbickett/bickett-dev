@@ -52,15 +52,14 @@
                     id="message-input"
                     v-model="form.message"
                     placeholder="What's on your mind?"
-                    rows="3"
-                    max-rows="6"
+                    rows="6"
                 ></b-form-textarea>
 
             </b-form-group>
 
             <div data-netlify-recaptcha="true"></div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <b-button size="lg" type="submit" variant="primary">Submit</b-button>
         </b-form>
 
 
