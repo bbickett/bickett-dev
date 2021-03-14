@@ -21,6 +21,7 @@
                     id="name-input"
                     v-model="form.name"
                     type="text"
+                    name="name"
                     placeholder="Name"
                     required
                     ></b-form-input>
@@ -35,6 +36,7 @@
                     id="email-input"
                     v-model="form.email"
                     type="email"
+                    name="email"
                     placeholder="Enter email"
                     required
                     ></b-form-input>
@@ -53,6 +55,7 @@
                     v-model="form.message"
                     placeholder="What's on your mind?"
                     rows="6"
+                    name="message"
                 ></b-form-textarea>
 
             </b-form-group>
