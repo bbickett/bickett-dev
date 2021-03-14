@@ -4,7 +4,7 @@
         <p>What's on your mind?</p>
 
 
-        <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" data-netlify-recaptcha="true" @submit.prevent="submitContactForm">
+        <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" @submit.prevent="submitContactForm">
 
             <input type="hidden" name="form-name" value="contact" />
 
@@ -60,7 +60,7 @@
 
             </b-form-group>
 
-            <div data-netlify-recaptcha="true"></div>
+
 
             <b-button size="lg" type="submit" variant="primary">Submit</b-button>
         </b-form>
