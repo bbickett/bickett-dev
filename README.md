@@ -1,5 +1,8 @@
 # www.bickett.dev
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc9b1046-bb88-4392-b739-55705ef2cee7/deploy-status)](https://app.netlify.com/sites/bickett-dev/deploys)
+
+
 This is my initial step into creating a personal site with hopefully some blog posts sharing what I've learning over my web development days.  This most likely includes making mistakes on this site to learn from and share as well.
 
 
