@@ -6,7 +6,7 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
-                <b-navbar-nav class="nav-pages">
+                <b-navbar-nav class="nav-pages ml-auto">
                     <b-nav-item exact exact-active-class="active" to="/blog">Blog</b-nav-item>
                     <b-nav-item exact exact-active-class="active" to="/about">About</b-nav-item>
                     <b-nav-item exact exact-active-class="active" to="/contact">Contact</b-nav-item>
@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 
     
-    .navbar-light .navbar-nav {
+    .main-nav .navbar-nav {
         .nav-pages {
             font-family: "Architects Daughter";
         }
@@ -45,6 +45,8 @@ export default {
             font-size: 1.4rem;
             color: var(--brand);
             font-weight: 600;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
 
             &:hover {
                 color: var(--alternate);
