@@ -37,7 +37,15 @@ module.exports = {
 
         },
       },
-    }  
+    },
+    {
+      use: 'gridsome-plugin-gtag',
+      options: {
+          config: {
+              id: process.env.GOOGLE_ANALYTICS_ID,
+          },
+      },
+  },  
   ],
   chainWebpack (config) {
       // Load variables for all vue-files
