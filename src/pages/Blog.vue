@@ -1,8 +1,14 @@
 <template>
     <Layout>
-        <h1 class="page-title">Articles</h1>
 
-        <article-list :posts="$page.articles.edges" :page-info="$page.articles.pageInfo" />
+        <div class="container">
+          <h1 class="page-title">Articles</h1>
+
+          <article-list :posts="$page.articles.edges" :page-info="$page.articles.pageInfo" />
+
+
+        </div>
+        
     </Layout>
 </template>
 
@@ -42,6 +48,9 @@ query Blog ($page: Int) {
 import ArticleList from "@/components/ArticleList";
 
 export default {
+    metaInfo: {
+      title: 'Blog'
+    },
     components: {
         ArticleList
     }

@@ -5,7 +5,7 @@
           <main-nav></main-nav>
         </header>
 
-        <main class="main container">
+        <main class="main">
             <slot/>
         </main>
     

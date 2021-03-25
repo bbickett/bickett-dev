@@ -1,8 +1,11 @@
 <template>
   <Layout>
-    <h1>About Me</h1>
+    <div class="container">
+      <h1>About Me</h1>
 
-    <brian-avatar www="150"></brian-avatar>
+      <brian-avatar www="150"></brian-avatar>
+    </div>
+
 
   </Layout>
 </template>

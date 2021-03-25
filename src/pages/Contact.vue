@@ -1,71 +1,72 @@
 <template>
     <Layout>
-        <h1>Message Me</h1>
-        <p>What's on your mind?</p>
+        <div class="container">
+            <h1>Message Me</h1>
+            <p>What's on your mind?</p>
 
 
-        <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" @submit.prevent="submitContactForm">
+            <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" @submit.prevent="submitContactForm">
 
-            <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contact" />
 
-            <p class="d-none">
-                <input type="text" name="title">
-            </p>
+                <p class="d-none">
+                    <input type="text" name="title">
+                </p>
 
-            <b-form-group
-                id="email-name"
-                label="Name"
-                label-for="name-input"
-            >
-                <b-form-input
-                    id="name-input"
-                    v-model="form.name"
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    required
-                    ></b-form-input>
-            </b-form-group>
+                <b-form-group
+                    id="email-name"
+                    label="Name"
+                    label-for="name-input"
+                >
+                    <b-form-input
+                        id="name-input"
+                        v-model="form.name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required
+                        ></b-form-input>
+                </b-form-group>
 
-            <b-form-group
-                id="email-address"
-                label="Email address"
-                label-for="email-input"
-            >
-                <b-form-input
-                    id="email-input"
-                    v-model="form.email"
-                    type="email"
-                    name="email"
-                    placeholder="Enter email"
-                    required
-                    ></b-form-input>
-            </b-form-group>
-
-
-            <b-form-group
-                id="email-message"
-                label="Message"
-                label-for="message-input"
-                description="Message"
-            >
-
-                <b-form-textarea
-                    id="message-input"
-                    v-model="form.message"
-                    placeholder="What's on your mind?"
-                    rows="6"
-                    name="message"
-                ></b-form-textarea>
-
-            </b-form-group>
+                <b-form-group
+                    id="email-address"
+                    label="Email address"
+                    label-for="email-input"
+                >
+                    <b-form-input
+                        id="email-input"
+                        v-model="form.email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter email"
+                        required
+                        ></b-form-input>
+                </b-form-group>
 
 
+                <b-form-group
+                    id="email-message"
+                    label="Message"
+                    label-for="message-input"
+                    description="Message"
+                >
 
-            <b-button size="lg" type="submit" variant="primary">Submit</b-button>
-        </b-form>
+                    <b-form-textarea
+                        id="message-input"
+                        v-model="form.message"
+                        placeholder="What's on your mind?"
+                        rows="6"
+                        name="message"
+                    ></b-form-textarea>
+
+                </b-form-group>
 
 
+
+                <b-button size="lg" type="submit" variant="primary">Submit</b-button>
+            </b-form>
+
+        </div>
     </Layout>
 </template>
 
