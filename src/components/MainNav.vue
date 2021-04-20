@@ -7,7 +7,7 @@
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="nav-pages ml-auto">
-                    <b-nav-item exact exact-active-class="active" to="/blog">Blog</b-nav-item>
+                    <b-nav-item exact exact-active-class="active" disabled to="/blog">Blog</b-nav-item>
                     <b-nav-item exact exact-active-class="active" to="/about">About</b-nav-item>
                     <b-nav-item exact exact-active-class="active" to="/contact">Contact</b-nav-item>
                 </b-navbar-nav>

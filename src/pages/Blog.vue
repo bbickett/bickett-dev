@@ -4,7 +4,11 @@
         <div class="container">
           <h1 class="page-title">Articles</h1>
 
-          <article-list :posts="$page.articles.edges" :page-info="$page.articles.pageInfo" />
+          <p>Total Pages: {{ $page.articles.pageInfo.totalPages }}</p>
+          <p>Current Pages: {{ $page.articles.pageInfo.currentPage }}</p>
+          <p>Total Articles: {{ $page.articles.totalCount }}</p>
+
+          <article-list :articles="$page.articles.edges" :page-info="$page.articles.pageInfo" />
 
 
         </div>

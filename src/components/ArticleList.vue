@@ -1,26 +1,22 @@
 <template>
     <div class="article-list">
-
-        <div v-for="post in posts" :key="post.node.id" class="article">
-            <h2>
-                <g-link :to="post.node.path">{{ post.node.title }}</g-link>
-            </h2>
-            <small>
-                {{ new Date(post.node.date).toLocaleDateString() }}
-                {{ post.node.timeToRead }} min read
-            </small>
-            <p v-if="post.node.excerpt">{{ post.node.excerpt }}</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div v-for="article in articles" :key="article.node.id" class="article">
+                <article-summary :article="article" class="col"></article-summary>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 
+import ArticleSummary from '@/components/ArticleSummary'
 
 export default {
-    props: ["posts", "pageInfo"],
+    props: ["articles", "pageInfo"],
     components: {
-        
+        ArticleSummary
     }
 }
+
 </script>

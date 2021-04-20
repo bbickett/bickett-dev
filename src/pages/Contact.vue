@@ -2,7 +2,7 @@
     <Layout>
         <div class="container">
             <h1>Message Me</h1>
-            <p>What's on your mind?</p>
+            <p></p>
 
 
             <b-form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="title" @submit.prevent="submitContactForm">
@@ -48,7 +48,7 @@
                     id="email-message"
                     label="Message"
                     label-for="message-input"
-                    description="Message"
+                    description=""
                 >
 
                     <b-form-textarea

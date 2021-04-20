@@ -6,18 +6,18 @@
 
           <p>
             This is my little corner of the web where I hope to enlighten others and better my own skills 
-            by writing about things I've learned or currently learning.  I mostly will try to focus on
-            web development, but may occasionally dive into my other interests: fixing/building things, woodworking, house chores and remodels, and running!
+            by writing about things I have learned or am currently learning.  I mostly will try to focus on
+            web development, but may occasionally dive into my other interests: fixing/building things, 
+            woodworking, house chores and remodels, and running!
           </p>
 
+
+          <p>Hopefully I'll have get this site designed a little better and get my first blog post up!</p>
       </section>
 
-  <div class="contianer-fluid">
-    <hr>
-  </div>
 
 
-      <section id="latest-articles">
+      <!-- <section id="latest-articles">
         <div class="container">
           <h2>Latest Articles</h2>
 
@@ -32,15 +32,8 @@
 
           <g-link to="/blog">What to see more articles?</g-link>
       </div>
-    </section>
+    </section> -->
 
-
-    <section id="about-me" class="container">
-
-      <h2>About Me</h2>
-
-
-    </section>
 
 
   </Layout>
